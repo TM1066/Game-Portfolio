@@ -1,21 +1,33 @@
 @font-face {
     font-family: 'FixedSys';
-    src: url('Font\FSEX302.woff') format('woff');
+    src: url('../Font/FSEX302.woff') format('woff');
 }
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 body {
     background-color: #121212;
     color: #e0e0e0;
     font-family: 'FixedSys', "Century Gothic", sans-serif;
+    text-shadow: 0px 0px 1px #000;
+    image-rendering: pixelated;
     margin: 0;
     padding: 20px;
 }
 h1 {
-    border: turquoise;
+    border: #c9ffff;
     border-style: solid;
+    border-width: 0.1em;
     border-radius: 0.3em;
     text-align: center;
-    margin-bottom: 1rem;
     font-size: 5em;
+}
+.introduction {
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 /* Container for the vertical list */
 .game-list {
@@ -32,21 +44,87 @@ h1 {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 .game-title {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 10px;
-    border: turquoise;
+    /* border: #b4ffff;
+    border-style: solid;
+    border-radius: 0.3em; */
 }
 /* The embedded Unity game player */
 .game-player {
     width: 100%;
     max-width: 1024px;
-    height: 576px; /* assuming a 16:9 aspect ratio */
+    height: 620px; /* assuming a 16:9 aspect ratio */
     border: none;
     display: block;
     margin: 0 auto 10px auto;
+
+    /*getting rid of scrollbar in modern browsers*/
+    overflow: hidden;
+    scrollbar-width: none;
+}
+.game-player::-webkit-scrollbar{
+    display: none;
 }
 .game-description {
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1.5;
     text-align: center;
+}
+/* Trying to get a play button working to stop the cacophony of noise
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.play-overlay button {
+    font-size: 2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #90afaf;
+    color: #121212;
+    cursor: pointer;
+}
+.game-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: none; /* Initially hidden 
+} */
+
+/* Controls Table Styling */
+.game-controls {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: #252525;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.game-controls th, .game-controls td {
+    padding: 8px 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.game-controls th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.game-controls tr:last-child td {
+    border-bottom: none;
 }
