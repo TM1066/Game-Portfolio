@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'FixedSys';
+    src: url('Font\FSEX302.woff') format('woff');
+}
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'FixedSys', "Century Gothic", sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    border: turquoise;
+    border-style: solid;
+    border-radius: 0.3em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/* Container for the vertical list */
+.game-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* Each game block */
+.game-item {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+.game-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border: turquoise;
+}
+/* The embedded Unity game player */
+.game-player {
+    width: 100%;
+    max-width: 1024px;
+    height: 576px; /* assuming a 16:9 aspect ratio */
+    border: none;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.game-description {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+}
