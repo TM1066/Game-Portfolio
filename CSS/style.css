@@ -131,3 +131,8 @@ h1 {
 .game-controls tr:last-child td {
     border-bottom: none;
 }
+
+/* download links */
+a {
+    color: #c9ffff;
+}
