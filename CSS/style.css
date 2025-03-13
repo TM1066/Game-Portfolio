@@ -23,6 +23,17 @@ h1 {
     padding: 0.1em;
     font-weight: normal;
 }
+h2 {
+    margin: .3em;
+    border: #c9ffff;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 0.3em;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.1em auto;
+    font-weight: normal;
+}
 .introduction {
     font-size: 2rem;
     text-align: center;
@@ -31,6 +42,21 @@ h1 {
     border-radius: 8px;
     background-color: #1e1e1e;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    padding: 0.5em;
+    font-size: 1.5em;
+    margin: 10px auto;
+    justify-content: center;
+    border-collapse: collapse;
+    background-color: #252525;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 6px;
+    overflow: hidden;
 }
 /* Container for the vertical list */
 .game-list {
