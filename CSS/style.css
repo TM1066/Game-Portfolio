@@ -19,7 +19,7 @@ h1 {
     border-width: 0.1em;
     border-radius: 0.3em;
     text-align: center;
-    font-size: 6em;
+    font-size: 5.5em;
     padding: 0.1em;
     font-weight: normal;
 }
@@ -33,6 +33,12 @@ h2 {
     font-size: 3em;
     padding: 0.1em auto;
     font-weight: normal;
+}
+img {
+    max-width: auto;
+    max-height: auto;
+    width: auto;
+    height: auto;
 }
 .introduction {
     font-size: 2rem;
@@ -61,23 +67,60 @@ h2 {
 /* Container for the vertical list */
 .game-list {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
+
+    gap: 1rem;
 }
-/* Each game block */
+.game-list-item {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.game-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    /* border: #b4ffff;
+    border-style: solid;
+    border-radius: 0.3em; */
+}
+.game-thumbnail {
+    width: auto;
+    height: auto;
+    align-self: center;
+}
+.game-thumbnail-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: all 0.3s ease;
+    pointer-events: none; /* stops text from blocking the hover */
+}
+.game-thumbnail-title :hover{
+    opacity: 1;
+}
+.game-thumbnail :hover{
+    border: 5px solid #929292;
+    border-radius: 8px;
+    background-color: #414141;
+    box-shadow: 0 2px 6px rgba(32, 32, 32, 0.7);
+}
+/* Each game block - FOR USE ON ACTUAL GAME PAGE, NOT LIST PAGE*/
 .game-item {
     border: 1px solid #333;
     padding: 20px;
     border-radius: 8px;
     background-color: #1e1e1e;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
-}
-.game-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    /* border: #b4ffff;
-    border-style: solid;
-    border-radius: 0.3em; */
 }
 /* The embedded Unity game player */
 .game-player {
