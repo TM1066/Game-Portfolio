@@ -11,6 +11,8 @@ body {
     image-rendering: pixelated;
     margin: 0;
     padding: 20px;
+    text-align: center;
+    font-size: 1em;
 }
 h1 {
     margin: .3em;
@@ -34,6 +36,17 @@ h2 {
     padding: 0.1em auto;
     font-weight: normal;
 }
+h3 {
+    margin: .3em;
+    border: #c9ffff;
+    border-style: solid;
+    border-width: 0.05em;
+    border-radius: 0.3em;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.1em auto;
+    font-weight: normal;
+}
 img {
     max-width: 512px;
     max-height: 512pxo;
@@ -53,8 +66,8 @@ img {
     display: flex;
     flex-direction: row;
     gap: 200px;
-    padding: 0.5em;
-    font-size: 1.5em;
+    padding: 0.25em;
+    font-size: 1.75em;
     margin: 10px auto;
     justify-content: center;
     border-collapse: collapse;
@@ -106,9 +119,14 @@ img {
     opacity: 1;
     transition: all 0.3s ease;
     pointer-events: none; /* stops text from blocking the hover */
+    text-shadow: 0px 0px 15px #000;
+    background-color: #000;
+    border: 5px solid #000000;
+    border-radius: 1rem;
 }
 .game-thumbnail-title :hover{
     opacity: 1;
+    font-size: 2rem;
 }
 .game-thumbnail :hover{
     border: 5px solid #929292;
