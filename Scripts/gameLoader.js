@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const iframe = container.querySelector(".game-frame");
         const gameName = container.dataset.game;
 
-        // Define the correct game URLs (modify as needed)
+        // Define the correct game URLs
         const gameUrls = {
             Game1: "Games/Astrova/index.html",
             Game2: "Games/Bubble Blower/index.html",
