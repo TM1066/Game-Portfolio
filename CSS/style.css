@@ -95,6 +95,7 @@ img {
     flex-wrap: wrap;
 
     gap: 1rem;
+    justify-content: center;
 }
 .game-list-item {
     border: 1px solid #333;
