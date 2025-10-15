@@ -271,6 +271,7 @@ a {
     grid-area: Description; 
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .project-title { 
